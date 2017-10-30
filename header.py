@@ -38,8 +38,8 @@ def resource_path(relative_path):
 
 def input_txt(filename):
 	if  os.path.exists(filename)==False: sys.exit("The input file wasn't found !")
-    arr = open(filename).read().split("\n") 
-    return arr
+	arr = open(filename).read().split("\n")
+	return arr
 
 def database(link):
 	urllib.request.urlretrieve(link, 'data.csv')
@@ -66,17 +66,17 @@ def read_cell(x, y):
 
 def pkg(tid):
 	if  os.path.exists(pkg_dec.exe)==False: sys.exit("The pkg_dec.exe wasn't found !")
-    i = search_tid(tid)
-    link = read_cell(3, i)
-    urllib.request.urlretrieve(link, 'temp.pkg')
-    zrif = read_cell(4, i)
-    if zrif == "NOT REQUIRED":
-        zrif = None
-    if zrif != "MISSING":
-        os.system("pkg_dec --make-dirs=ux temp.pkg --license="+zrif)
-        Path("temp.pkg").remove_p()
+	i = search_tid(tid)
+	link = read_cell(3, i)
+	urllib.request.urlretrieve(link, 'temp.pkg')
+	zrif = read_cell(4, i)
+	if zrif == "NOT REQUIRED":
+		zrif = None
+	if zrif != "MISSING":
+		os.system("pkg_dec --make-dirs=ux temp.pkg --license="+zrif)
+		Path("temp.pkg").remove_p()
 	else:
-		break # Not sure if this will work :/ (It should end the function)
+		print("ZRif is Missing for", tid)
 def downupdate(tid):
     link = update.patch(tid)
     if link != 0:
