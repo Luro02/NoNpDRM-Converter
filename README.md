@@ -33,5 +33,4 @@ In the "dist" folder is the .exe that has to be in a folder with pkg_dec.exe and
 - Progress Bar for downloads
 
 ## Issues:
-
-Please open an issue and tag it with bug :)
+My brain is 90% of the time afk but if you want you can open an issue and tag it with bug :)
