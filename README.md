@@ -30,7 +30,5 @@ In the "dist" folder is the .exe that has to be in a folder with pkg_dec.exe and
 
 - give all Title ID's a name
 
-- Progress Bar for downloads
-
 ## Issues:
 My brain is 90% of the time afk but if you want you can open an issue and tag it with bug :)

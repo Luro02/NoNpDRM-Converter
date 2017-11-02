@@ -99,3 +99,11 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# defined by myself
+keys.cfg
+pkg_dec.exe
+input.txt
+app/
+patch/
+Testfolder/

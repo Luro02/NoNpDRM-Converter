@@ -16,17 +16,16 @@ import xml.dom.minidom as minidom
 
 def keyfile():
 	#read File
-	with open ("keys.cfg", "r") as r:
-		key_dig = r.readlines()
-	key_dig[4] = key_dig[4].upper()
+  with open ("keys.cfg", "r") as r:
+    key_dig = r.readlines()
+  key_dig[4] = key_dig[4].upper()
 	#Hashcheck
-	hash_2 = hashlib.sha1((key_dig[4]).encode("utf-8"))
-	if "3d059b28eb079add2676e9db181d794de1235908" != hash_2.hexdigest():
-		sys.exit("The key is wrong !")
-	else:
-		update_key = key_dig[4]
-	print(update_key)
-	return key_dig
+  hash_2 = hashlib.sha1((key_dig[4]).encode("utf-8"))
+  if "3d059b28eb079add2676e9db181d794de1235908" != hash_2.hexdigest():
+    sys.exit("The key is wrong !")
+  else:
+    update_key = key_dig[4]
+  return key_dig
 key_dig = keyfile()
 # http://wololo.net/talk/viewtopic.php?f=54&t=44091
 KEY = bytes(key_dig[4], encoding='utf-8')
