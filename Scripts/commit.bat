@@ -1,7 +1,7 @@
 @echo off
 cd ..
 git add .
-git commit -m "added progressbar and updated the .gitignore"
+git commit -m "v0.2-alpha"
 git push origin master
 
 pause

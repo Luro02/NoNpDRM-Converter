@@ -1,0 +1,4 @@
+hurry.filesize==0.9
+pandas==0.20.3
+prompt_toolkit==1.0.15
+hurry==1.0

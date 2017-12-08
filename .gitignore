@@ -107,3 +107,12 @@ input.txt
 app/
 patch/
 Testfolder/
+todo.txt
+config
+.idea/
+sce_sys/
+eboot.bin
+eboot.pbp
+*.exe
+icons/
+*.csv
