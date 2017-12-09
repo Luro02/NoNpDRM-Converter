@@ -1,0 +1,8 @@
+language: python
+os: windows
+python:
+  - "3.6"
+install: pip install --user -r requirements.txt
+
+# command to run tests
+script: python prompt.py
