@@ -1,4 +1,4 @@
-# This Repository is WIP.
+# This Repository is WIP. [![Build Status](https://travis-ci.org/Gnarmagon/NoNpDRM-Converter.svg?branch=primary)](https://travis-ci.org/Gnarmagon/NoNpDRM-Converter)
 
 ## How to use:
 
